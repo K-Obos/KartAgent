@@ -1,0 +1,212 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &100042
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 400050}
+  - component: {fileID: 7718642927487191664}
+  - component: {fileID: 11400002}
+  - component: {fileID: 11400022}
+  - component: {fileID: 11400024}
+  m_Layer: 8
+  m_Name: Kart
+  m_TagString: Kart
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &400050
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100042}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 8268186319175812861}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!54 &7718642927487191664
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100042}
+  serializedVersion: 2
+  m_Mass: 1500
+  m_Drag: 0.1
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!114 &11400002
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100042}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ea65b38d485c374caa584a03f1de571, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_CarDriveType: 2
+  m_WheelColliders:
+  - {fileID: 7062872830188213345}
+  - {fileID: 325186457543364242}
+  - {fileID: 5741064243195749918}
+  - {fileID: 7910647523512094343}
+  m_WheelMeshes:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  m_WheelEffects:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  m_CentreOfMassOffset: {x: 0, y: 0, z: 0}
+  m_MaximumSteerAngle: 30
+  m_SteerHelper: 0
+  m_TractionControl: 0
+  m_FullTorqueOverAllWheels: 2500
+  m_ReverseTorque: 500
+  m_MaxHandbrakeTorque: 100000000
+  m_Downforce: 500
+  m_SpeedType: 1
+  m_Topspeed: 160
+  m_RevRangeBoundary: 1
+  m_SlipLimit: 1
+  m_BrakeTorque: 20000
+--- !u!114 &11400022
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100042}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96468c245ae8e0d4f8f1c7a7b8b0542e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &11400024
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100042}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20fa55eb64c5cea4aa3c71ae19c434bf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  engineSoundStyle: 0
+  lowAccelClip: {fileID: 8300000, guid: c4d8928c75c21af43998193f0f038429, type: 3}
+  lowDecelClip: {fileID: 8300000, guid: c4d8928c75c21af43998193f0f038429, type: 3}
+  highAccelClip: {fileID: 8300000, guid: 03e3bd08a6e70684dbe299a3e185fdd2, type: 3}
+  highDecelClip: {fileID: 8300000, guid: 03bf91d88fce91c41995d27de63cc967, type: 3}
+  pitchMultiplier: 0.8
+  lowPitchMin: 1
+  lowPitchMax: 5
+  highPitchMultiplier: 0.25
+  maxRolloffDistance: 500
+  dopplerLevel: 1
+  useDoppler: 1
+--- !u!1001 &462824231660876031
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 400050}
+    m_Modifications:
+    - target: {fileID: 7626173479466303744, guid: 009d011f28430d643b27309ad05a713c, type: 3}
+      propertyPath: m_Name
+      value: KartFrame
+      objectReference: {fileID: 0}
+    - target: {fileID: 8417851716311905794, guid: 009d011f28430d643b27309ad05a713c, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8417851716311905794, guid: 009d011f28430d643b27309ad05a713c, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8417851716311905794, guid: 009d011f28430d643b27309ad05a713c, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8417851716311905794, guid: 009d011f28430d643b27309ad05a713c, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8417851716311905794, guid: 009d011f28430d643b27309ad05a713c, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8417851716311905794, guid: 009d011f28430d643b27309ad05a713c, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8417851716311905794, guid: 009d011f28430d643b27309ad05a713c, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8417851716311905794, guid: 009d011f28430d643b27309ad05a713c, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8417851716311905794, guid: 009d011f28430d643b27309ad05a713c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8417851716311905794, guid: 009d011f28430d643b27309ad05a713c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8417851716311905794, guid: 009d011f28430d643b27309ad05a713c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 009d011f28430d643b27309ad05a713c, type: 3}
+--- !u!4 &8268186319175812861 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8417851716311905794, guid: 009d011f28430d643b27309ad05a713c, type: 3}
+  m_PrefabInstance: {fileID: 462824231660876031}
+  m_PrefabAsset: {fileID: 0}
+--- !u!146 &325186457543364242 stripped
+WheelCollider:
+  m_CorrespondingSourceObject: {fileID: 211391504096509549, guid: 009d011f28430d643b27309ad05a713c, type: 3}
+  m_PrefabInstance: {fileID: 462824231660876031}
+  m_PrefabAsset: {fileID: 0}
+--- !u!146 &7062872830188213345 stripped
+WheelCollider:
+  m_CorrespondingSourceObject: {fileID: 7235056186808509598, guid: 009d011f28430d643b27309ad05a713c, type: 3}
+  m_PrefabInstance: {fileID: 462824231660876031}
+  m_PrefabAsset: {fileID: 0}
+--- !u!146 &7910647523512094343 stripped
+WheelCollider:
+  m_CorrespondingSourceObject: {fileID: 7756337847259758200, guid: 009d011f28430d643b27309ad05a713c, type: 3}
+  m_PrefabInstance: {fileID: 462824231660876031}
+  m_PrefabAsset: {fileID: 0}
+--- !u!146 &5741064243195749918 stripped
+WheelCollider:
+  m_CorrespondingSourceObject: {fileID: 5314269193006733025, guid: 009d011f28430d643b27309ad05a713c, type: 3}
+  m_PrefabInstance: {fileID: 462824231660876031}
+  m_PrefabAsset: {fileID: 0}
